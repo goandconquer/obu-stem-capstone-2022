@@ -1,0 +1,25 @@
+:root {
+
+    --webpage-background: #FAF9F6;
+    --normal-text: #404040;
+    --sidebar-background: #95c777;
+    --hover-background: #89b86c;
+    --hover-text: #FFFFFF;
+
+}
+
+a {
+
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--normal-text);
+    transition: 0.5s;
+
+}
+
+a:hover {
+
+    background-color: var(--hover-background);
+    transition: 0.5s;
+
+}
