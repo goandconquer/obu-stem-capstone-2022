@@ -14,6 +14,7 @@
         <link rel="stylesheet" href="src/css/normalize.css">
         <link rel="stylesheet" href="src/css/defaults.css">
         <link rel="stylesheet" href="src/css/global.css">
+        <link rel="stylesheet" href="src/css/index.css">
 
         <!-- @TODO: Update FontAwesome resource to latest version. -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -38,21 +39,21 @@
             
             <section>
 
-                <div>
+                <div class="title">
                     
                     <h1>Welcome to STEM Day at Oklahoma Baptist University!</h1>
                 
                 </div>
 
-                <div>
+                <div class="hero-images">
                     
-                    <img src="assets/images/technology-lab.jpg">
-                    <img src="assets/images/office-graphic.jpg">
-                    <img src="assets/images/html-visual-code.jpg">
+                    <img id="hero-1" src="assets/images/technology-lab.jpg">
+                    <img id="hero-2" src="assets/images/office-graphic.jpg">
+                    <img id="hero-3" src="assets/images/html-visual-code.jpg">
                 
                 </div>
 
-                <div>
+                <div class="cards">
                     
                     <article>
                         
@@ -60,7 +61,9 @@
                         
                         <hr></hr>
                         
-                        <p>STEM is an acronym that stands for (S)cience, (T)echnology, (E)ngineering, and (M)athematics. The acronym usually accompanies any sorts of programs or activities that emphasize learning in these fields and typically is targeted towards the younger generations. Throughout the world, the world's biggest problems are solved using these core educational subjects, so it's important that students across the world are provided the opportunity to engage with the tools and techniques that enable us to create amazing things that we use everyday!</p>
+                        <p>STEM is an acronym that stands for (S)cience, (T)echnology, (E)ngineering, and (M)athematics. The acronym usually accompanies any sorts of programs or activities that emphasize learning in these fields and typically is targeted towards the younger generations.</p>
+                        
+                        <p>Throughout the world, the world's biggest problems are solved using these core educational subjects, so it's important that students across the world are provided the opportunity to engage with the tools and techniques that enable us to create amazing things that we use everyday!</p>
                     
                     </article>
                     
@@ -72,22 +75,14 @@
                         
                         <p>As a Christian liberal arts university, OBU is dedicated to the pursuit of raising up the next generation with not only the knowledge and experience young people need to begin their career, but also the virtues and ethics necessary to bring out positive change in the world, both today and into the future.</p>
 
-                        <table>
-                            <th>
-                                <tr>
-                                    <td>Programs</td>
-                                    <td>Years of Operation</td>
-                                    <td>Alumni</td>
-                                </tr>
-                            </th>
-                            <tb>
-                                <tr>
-                                    <td>+80</td>
-                                    <td>+112</td>
-                                    <td>+30,000</td>
-                                </tr>
-                            </tb>
-                        </table>
+                        <div class="grid">
+                            <p>Programs</p>
+                            <p>Years of Operation</p>
+                            <p>Alumni</p>
+                            <p>+80</p>
+                            <p>+112</p>
+                            <p>+30,000</p>
+                        </div>
                     
                     </article>
                     
@@ -97,7 +92,11 @@
 
                         <hr></hr>
 
-                        <p>One of the major advantages you gain from obtaining a degree in computer science from Oklahoma Baptist University is that you aren't limited to learning a bunch of different coding languages. Instead, you are provided with opportunities to dozens of different skillsets that are all applicable to the wider world of business. With solid foundations in mathematics, applied physics, and business fundamentals, you will come away with not only the knowledge and skills necessary to develop compelling software the solves problems, but also the understanding of how your software impacts an entire organization or community. Graduates from OBU have gone on to fill in dozens of complex business-oriented rolls that were complimented by their technical and creative training during their time at OBU. For more information about the program, <a href="https://www.okbu.edu/catalog/programs/computer-science.html">click here!</a></p>
+                        <p>One of the major advantages you gain from obtaining a degree in computer science from Oklahoma Baptist University is that you aren't limited to learning a bunch of different coding languages. Instead, you are provided with opportunities to dozens of different skillsets that are all applicable to the wider world of business.</p>
+                        
+                        <p>With solid foundations in mathematics, applied physics, and business fundamentals, you will come away with not only the knowledge and skills necessary to develop compelling software the solves problems, but also the understanding of how your software impacts an entire organization or community. Graduates from OBU have gone on to fill in dozens of complex business-oriented rolls that were complimented by their technical and creative training during their time at OBU.</p>
+                            
+                        <p>For more information about the program, <a href="https://www.okbu.edu/catalog/programs/computer-science.html">click here!</a></p>
 
                     </article>
 
@@ -109,7 +108,9 @@
 
                         <h3>Encrpytion Fundamentals</h3>
 
-                        <p>Technical computing has its origin in the obfuscation of vital information. People who needed to hide critical details about their efforts (often in times of conflict) from hostile parties would rely on complex algorithm-like encodings that would mask their secrets behind difficult-to-crack ciphertexts. This site showcases three different types of encoding methods (Caeser Cipher, Rail Fence Cipher, and Substitution Cipher), as well as how they work and how they are decrypted. Our STEM Day demonstration allows participants to interactively use data analyzing techniques that are often used to understand ciphertext generated through the Substitution Cipher.</p>
+                        <p>Technical computing has its origin in the obfuscation of vital information. People who needed to hide critical details about their efforts (often in times of conflict) from hostile parties would rely on complex algorithm-like encodings that would mask their secrets behind difficult-to-crack ciphertexts.</p>
+                        
+                        <p>This site showcases three different types of encoding methods (Caeser Cipher, Rail Fence Cipher, and Substitution Cipher), as well as how they work and how they are decrypted. Our STEM Day demonstration allows participants to interactively use data analyzing techniques that are often used to understand ciphertext generated through the Substitution Cipher.</p>
 
                         <h3>Data Classification</h3>
 
@@ -125,21 +126,7 @@
 
         <footer>
 
-            <h3>Oklahoma Baptist University</h3>
-
-            <div>
-                
-                <a href="https://www.okbu.edu">https://www.okbu.edu</a>
-                <p>500 West University St.</p>
-                <p>Shawnee, OK 74804</p>
-            
-            </div>
-
             <p>This website was created by the 2022 Computer Science Capstone class under the direction of Dr. Timothy Darr. All assets and code, unless otherwise explicitly stated, are the copyrighted material of the individual students. Photos are provided attribution-free from <a href="https://pixabay.com/">Pixabay</a>.</p>
-            
-            <div>
-
-            </div>
 
         </footer>
 

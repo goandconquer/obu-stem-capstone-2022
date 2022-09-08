@@ -8,12 +8,6 @@
 
 }
 
-html {
-
-
-
-}
-
 body {
 
     background-color: var(--webpage-background);
@@ -47,6 +41,7 @@ body {
 header {
 
     background-color: var(--sidebar-background);
+    width: 100vw;
 
 }
 
@@ -54,18 +49,19 @@ header {
 
         display: flex;
         flex-direction: row;
+        
 
     }
 
         nav > a {
-            
+        
             padding: 16px;
 
         }
 
         #burger {
 
-            visibility: hidden;
+            display: none;
 
         }
 
@@ -75,7 +71,7 @@ header {
 
 main {
 
-
+    padding: 0 24px;
 
 }
 
@@ -84,5 +80,38 @@ main {
 footer {
 
     background-color: var(--sidebar-background);
+    padding: 0 16px;
+    text-align: center;
+
+}
+
+/* @SECTION: FOLD MENU INTO MOBILE FORMAT */
+
+@media screen and (max-width: 565px) {
+
+    nav {
+
+        flex-direction: column;
+        margin-top: -202px;
+
+    }
+
+        nav a {
+
+            text-align: center;
+
+        }
+
+        #burger {
+
+            display: block;
+
+        }
+
+    main {
+
+        padding: 0 16px;
+
+    }
 
 }

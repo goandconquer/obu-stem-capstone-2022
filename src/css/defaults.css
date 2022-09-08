@@ -23,3 +23,23 @@ a:hover {
     transition: 0.5s;
 
 }
+
+hr {
+
+    border-color: #488720;
+    background-color: #488720;
+
+}
+
+article {
+
+    padding: 1rem;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
+}
+
+p {
+
+    font-size: 20px;
+
+}
