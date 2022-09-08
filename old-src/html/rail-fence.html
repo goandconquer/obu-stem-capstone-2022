@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+    
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <meta name="description" context="STEM Day 2022 @ OBU | Encryption Demonstration">
+        <meta name="author" content="David Goforth, Daniel Campbell, and Will Phencie">
+        
+        <title>STEM Day 2022 @ OBU | Encryption Demonstration</title>
+        
+        <link rel="stylesheet" href="../css/defaults.css">
+        <link rel="stylesheet" href="../css/caesar-cipher.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <script src="../javascript/rail-fence.js" defer></script>
+        <script src="../javascript/defaults.js" defer></script>
+
+    </head>
+    
+    <body>
+
+
+        <header>
+
+            <nav id="nav">
+
+                <ul>
+
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="caesar-cipher.html">Caesar Cipher</a></li>
+                    <li><a href="rail-fence.html">Rail Fence</a></li>
+                    <li><a href="substitution-cipher.html">Substitution Cipher</a></li>
+                    <li class="burger"><a href="#" id="burger" class="fa fa-bars"></a></li>
+
+                </ul>
+    
+            </nav>
+
+        </header>
+
+        <main>
+
+            <section class="title">
+
+                <h1>The Rail Fence Cipher</h1>
+
+            </section>
+
+            <section class="content">
+
+                <article class="card">
+                    
+                    <h1>What is the Rail Fence Cipher?</h1>
+
+                    <hr class="separator">
+
+                    <p>The Rail Fence Cipher (also known as the zig-zag cipher) falls under the family of transposition ciphers. The structure of the cipher is comprised of various "rails" or rows upon which successive letters from the plaintext are laid upon in a diagonal fashion (one element to the right, one element down) with the starting position being at the upper-left-most position in the structure. Once the plaintext has traversed the structure downward and encounters the last row, the plaintext's trajectory "bounces" and begins ascending diagonally along the rails (still to the right, but now upwards). It repeats this in fashion until the entire plain text has been mapped out this way.</p>
+
+                    <p>The generation of the ciphertext occurs at this point, where the algorithm now reads right-to-left across the patterned plaintext until an encrypted string of letters is generated. In this cipher, the encrypted text is not made up of entirely new symbols or letters, but instead relies on the positional manipulation of the letters introduced in the plaintext.</p>
+    
+                    <p>In this demonstration, the text that is to be encrypted should be entered into the text area labeled "Plaintext." If there is text to be decrypted, it should be entered into the text area labeled "Ciphertext." The encryption of the plaintext takes place once the button labeled "Encrypt" has been pressed. The decryption of the ciphertext takes place once the button labeled "Decrypt" has been pressed. The fields will be reset to their default values once the button labeled "Reset" has been pressed. A visual representation of the cipher structure for the plaintext will be generated once the button labeled "Grid" has been placed. In order to set how many rails that the cipher structure should use, enter a numerical value into the text area labeled "Rail Key."</p>
+    
+                </article>
+
+                <article class="card">
+
+                    <form>
+
+                        <div class="text-areas">
+    
+                            <label for="plaintext">Plaintext:</label><br>
+                            <textarea id="plaintext" name="plaintext" rows="5"></textarea><br>
+    
+                            <label for="ciphertext">Ciphertext:</label><br>
+                            <textarea id="ciphertext" name="ciphertext" rows="5"></textarea>
+    
+                        </div>
+    
+                        <input type="button" value="Encrypt" id="encrypt" name="encrypt">
+                        <input type="button" value="Decrypt" id="decrypt" name="decrypt">
+                        <input type="button" value="Reset" id="reset" name="reset">
+                        <input type="button" value="Grid" id="grid" name="grid">
+    
+                        <label for="rail-key">Rail Key:</label>
+                        <input type="number" value="2" id="railkey" name="rail-key" min="2">
+                        
+                    </form>
+    
+                    <div id="visualgrid" class="visualgrid">
+    
+                    </div>
+
+                </article>
+
+            </section>
+
+        </main>
+
+        <footer>
+
+            <p>This website was created by the 2022 Computer Science Capstone under the direction of Dr. Timothy Darr. All assets and code, unless otherwise explicitly stated, are the copyrighted material of the individual students.</p>
+
+        </footer>
+        
+    </body>
+
+</html>

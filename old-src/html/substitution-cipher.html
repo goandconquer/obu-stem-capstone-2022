@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+    
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <meta name="description" context="STEM Day 2022 @ OBU | Encryption Demonstration">
+        <meta name="author" content="David Goforth, Daniel Campbell, and Will Phencie">
+        
+        <title>STEM Day 2022 @ OBU | Encryption Demonstration</title>
+        
+        <link rel="stylesheet" href="../css/defaults.css">
+        <link rel="stylesheet" href="../css/substitution-cipher.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <script src="../javascript/substitution-cipher.js" defer></script>
+        <script src="../javascript/word-frequency.js" defer></script>
+        <script src="../javascript/word-match.js" defer></script>
+        <script src="../javascript/defaults.js" defer></script>
+
+    </head>
+    
+    <body>
+
+        <header>
+
+            <nav id="nav">
+
+                <ul>
+
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="caesar-cipher.html">Caesar Cipher</a></li>
+                    <li><a href="rail-fence.html">Rail Fence</a></li>
+                    <li><a href="substitution-cipher.html">Substitution Cipher</a></li>
+                    <li class="burger"><a href="#" id="burger" class="fa fa-bars"></a></li>
+
+                </ul>
+    
+            </nav>
+
+        </header>
+
+        <main>
+
+            <section class="title">
+
+                <h1>The Substitution Cipher</h1>
+
+            </section>
+
+            <section class="content">
+
+                <article class="card">
+
+                    <h1>What is the Substitution Cipher?</h1>
+
+                    <hr class="separator">
+
+                    <p>The Substitution Cipher is a more general implementation of the same fundamentals found within the Caesar Cipher demonstrated before, however it differs by employing a completely scrambled cipherkey alphabet instead of a static numeric value that shifts the standard alphabet. This form of cipher offers very little communication security, especially as messages become longer (more than several hundred ciphertext characters) as it can be easily broken by hand or with analytical tools that will be demonstrated. In some implementations, a ciper key is used to construct (or order) the substitution alphabet. However, in this demonstration, the working alphabet will already be determined.</p>
+
+                </article>
+
+                <article class="card">
+
+                    <div>
+
+                        <form>
+                    
+                            <label for="choosefile">Upload a .txt file to decode:</label>
+                            <input type="file" value="Choose File" id="choosefile" name="choosefile">
+        
+                        </form>
+
+                    </div>
+
+                    <hr class="separator">
+
+                    <div>
+
+                        <p id="fileoutput"></p>
+
+                    </div>
+
+                    <hr class="separator">
+
+                    <div>
+
+                        <form>
+
+                            <label for="find">Find:</label>
+                            <input type="text" name="find" id="find">
+        
+                            <label for="replace">Replace:</label>
+                            <input type="text" name="replace" id="replace">
+        
+                            <input type="button" value="Submit" name="submit" id="submit"></button>
+        
+                        </form>
+
+                    </div>
+
+                    <hr class="separator">
+
+                    <div id="solve" class="solve">
+        
+                    </div>
+
+                </article>
+
+                <article class="card">
+
+                    <h2>Word Finder</h2>
+
+                    <hr class="separator">
+
+                    <p>This utility accepts a combination of letters and periods and attempts to find all possible matches that adheres to the pattern. Periods are placed in the position of unknown letters. For example, if you know that the word you are trying to find has a "b", an "r", and a "k" at the end, but do not know what the letters in the third and forth position are, you'll enter "br..k" into the text field and press submit. Then, upload the "dict.txt" file and wait for it to return the possible matches.</p>
+
+                    <form>
+                        <div>
+                          <label for="name">Word to find:</label>
+                          <input type="text" id="name" name="name">
+                        </div>
+                        <div>
+                          <button>Submit</button>
+                        </div>
+                    </form>
+
+                    <input type="file" name="inputfile" id="inputfile">
+
+                    <hr class="separator">
+
+                    <div id="output"></div>
+
+                </article>
+
+                <article class="frequency card">
+
+                    <div id="letterfrequency" class="letterfrequency">
+
+                        <h2>Letter Frequency</h2>
+
+                    </div>
+
+                    <hr class="separator">
+
+                    <div id="wordfrequency" class="wordfrequency">
+
+                        <h2>Word Frequency</h2>
+    
+                    </div>
+
+                </article>
+
+            </section>
+
+        </main>
+
+        <footer>
+
+            <p>This program was created by students of the 2022 Computer Science Capstone class under the direction of Dr. Timothy Darr in anticipation of the STEM Day Fair at Oklahoma Baptist University. If you are interested in attending OBU, please visit https://okbu.edu for more details.</p>
+    
+        </footer>
+        
+    </body>
+
+</html>

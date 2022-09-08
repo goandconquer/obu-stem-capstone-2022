@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+    
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <meta name="description" context="STEM Day 2022 @ OBU | Encryption Demonstration">
+        <meta name="author" content="David Goforth, Daniel Campbell, and Will Phencie">
+        
+        <title>STEM Day 2022 @ OBU | Encryption Demonstration</title>
+        
+        <link rel="stylesheet" href="../css/defaults.css">
+        <link rel="stylesheet" href="../css/caesar-cipher.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <script src="../javascript/caesar-cipher.js" defer></script>
+        <script src="../javascript/defaults.js" defer></script>
+
+    </head>
+    
+    <body>
+
+        <header>
+
+            <nav id="nav">
+
+                <ul>
+
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="caesar-cipher.html">Caesar Cipher</a></li>
+                    <li><a href="rail-fence.html">Rail Fence</a></li>
+                    <li><a href="substitution-cipher.html">Substitution Cipher</a></li>
+                    <li class="burger"><a href="#" id="burger" class="fa fa-bars"></a></li>
+
+                </ul>
+    
+            </nav>
+
+        </header>
+
+        <main>
+
+            <section class="title">
+
+                <h1>The Caesar Cipher</h1>
+
+            </section>
+
+            <section class="content">
+
+                <article class="card">
+    
+                    <h1>What is the Caesar Cipher?</h1>
+
+                    <hr class="separator">
+
+                    <p>The Caesar Cipher is a simplistic and well-known cipher attributed to Julius Caesar, who preferred employing a shift value of 3 (A would become D in encryption, D would become A in decryption). The cipher falls under the family of substition ciphers, where each letter in the "plaintext" is replaced by some letter a fix number of positions down the alphabet.</p>
+    
+                    <p>In this demonstration, any message that is desired to be encrypted is entered into the text area labeled "Plaintext." The act of encryption takes place upon pressing the "Encrypt" button. If decrypting a encoded message, enter the encoded text into the "Ciphertext" text area and press the "Decrypt" button. To clear all fields, press the "Reset" button. Enter a numerical value into the text area labeled "Shift" to change how many steps along the alphabet the text is encoded/decoded.</p>
+                
+                </article>
+    
+                <article class="card">
+    
+                    <form>
+    
+                        <label for="plaintext">Plaintext:</label><br>
+                        <textarea id="plaintext" name="plaintext" cols="60" rows="5"></textarea><br>
+
+                        <label for="ciphertext">Ciphertext:</label><br>
+                        <textarea id="ciphertext" name="ciphertext" cols="60" rows="5"></textarea><br>
+    
+                        <input type="button" value="Encrypt" id="encrypt" name="encrypt">
+                        <input type="button" value="Decrypt" id="decrypt" name="decrypt">
+                        <input type="button" value="Reset" id="reset" name="reset">
+
+                        <label for="shift">Shift:</label>
+                        <input type="number" value="0" id="shift" name="shift" min="0" max="26" size="3">
+                        
+                    </form>
+
+                    <!-- <hr class="separator">
+
+                    <table>
+                        <th>
+                            <tr>
+                                <td>A</td>
+                                <td>B</td>
+                                <td>C</td>
+                                <td>D</td>
+                                <td>E</td>
+                                <td>F</td>
+                                <td>G</td>
+                                <td>H</td>
+                                <td>I</td>
+                                <td>J</td>
+                                <td>K</td>
+                                <td>L</td>
+                                <td>M</td>
+                                <td>N</td>
+                                <td>O</td>
+                                <td>P</td>
+                                <td>Q</td>
+                                <td>R</td>
+                                <td>S</td>
+                                <td>T</td>
+                                <td>U</td>
+                                <td>V</td>
+                                <td>W</td>
+                                <td>X</td>
+                                <td>Y</td>
+                                <td>Z</td>
+                            </tr>
+                        </th>
+                        <tb>
+                            <tr>
+                                <td>A</td>
+                                <td>B</td>
+                                <td>C</td>
+                                <td>D</td>
+                                <td>E</td>
+                                <td>F</td>
+                                <td>G</td>
+                                <td>H</td>
+                                <td>I</td>
+                                <td>J</td>
+                                <td>K</td>
+                                <td>L</td>
+                                <td>M</td>
+                                <td>N</td>
+                                <td>O</td>
+                                <td>P</td>
+                                <td>Q</td>
+                                <td>R</td>
+                                <td>S</td>
+                                <td>T</td>
+                                <td>U</td>
+                                <td>V</td>
+                                <td>W</td>
+                                <td>X</td>
+                                <td>Y</td>
+                                <td>Z</td>
+                            </tr>
+                        </tb>
+                    </table> -->
+    
+                </article>
+
+            </section>
+
+        </main>
+
+        <footer>
+
+            <p>This website was created by the 2022 Computer Science Capstone under the direction of Dr. Timothy Darr. All assets and code, unless otherwise explicitly stated, are the copyrighted material of the individual students.</p>
+
+        </footer>
+        
+    </body>
+
+</html>

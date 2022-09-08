@@ -1,0 +1,51 @@
+:root {
+
+    --webpage-color: #f0ead6;
+    --text-color: #404040;
+    --sidebar-color: #e0d0b9;
+    --hover-background-color: #857762;
+    --hover-text-color: #FFFFFF;
+    --body-background-color: #8C4843;
+
+}
+
+main {
+
+    color: white;
+    transition: 0.5s;
+
+    background-color: var(--body-background-color);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 3vh 10vw;
+
+}
+
+.output {
+
+    display: table;
+    max-height: 25vh;
+    overflow-y: auto;
+
+    background-color: red;
+
+}
+
+table {
+
+    empty-cells: show;
+    padding: 3vh 0vw;
+
+}
+
+td,
+th {
+
+    border: 1px solid gray;
+    padding: 8px;
+    width: 0.5rem;
+
+}

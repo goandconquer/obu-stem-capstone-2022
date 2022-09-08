@@ -1,0 +1,91 @@
+:root {
+
+    /* The color of main body of the webpage. */
+    --webpage-color: #FAF9F6;
+
+    /* The color of all generic text elements. */
+    --text-color: #404040;
+
+    /* The color of the header and footer elements. */
+    --sidebar-color: #95c777;
+
+    /* The color that highlights elements when the cursor hovers over them. */
+    --hover-background-color: #89b86c;
+
+    /* The color that the text changes to when the cursor hovers over them. */
+    --hover-text-color: #FFFFFF;
+
+}
+
+.content {
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5vw;
+
+}
+
+.title {
+
+    padding: 5vh 2.5vw 0vh;
+
+}
+
+.title h1 {
+
+    padding: 1rem;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
+}
+
+textarea {
+
+    position: relative;
+    width: 100%;
+    resize: none;
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .title {
+
+        padding: 2.5vh 2.5vw 0vh;
+
+    }
+
+    .title h1 {
+
+        box-shadow: none;
+    
+    }
+
+    .content {
+
+        display: flex;
+        flex-direction: column;
+
+    }
+
+}
+
+.grid {
+
+    background-color: #96705B;
+
+}
+
+table {
+
+    empty-cells: show;
+    padding: 3vh 0vw;
+
+}
+
+td,
+th {
+
+    border: 1px solid gray;
+    padding: 1rem;
+
+}
